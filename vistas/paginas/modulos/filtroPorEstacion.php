@@ -1,4 +1,4 @@
-<div class="col">
+<div class="col" id ="seleccionEstacion">
     <h2 class="px-5">Selecciona una estación</h2>
     <!-- Contenido de la primera columna -->
     <div class="container-xl my-3">

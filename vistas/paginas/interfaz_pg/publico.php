@@ -1,6 +1,6 @@
 <?php
     include "../modulos/header.php";
-    include "../modulos/conexion.php";
+    include "../../../modelo/conexion.php";
 ?>
 <!-- Sección de filtros en la cabecera -->
 <div class="container pb-2 px-5">

@@ -1,5 +1,7 @@
 
-<?php require("../modulos/conexion.php")?>
+<?php 
+    include "../../../modelo/conexion.php"
+?>
 
 
 <?php
