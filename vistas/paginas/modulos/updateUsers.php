@@ -1,38 +1,37 @@
 <?php
-    include "../modulos/header.php";
     include "../../../modelo/conexion.php";
+    include "../modulos/header.php";
+
+    $id = $_GET['id'];
+
+    include "../../../modelo/consultas/consultaUsuariosPorId.php";
+    include "../../../modelo/consultas/verificarConsultaUsuarios.php";
+
 ?>
 
-<div class="formulario">
-    <h2>Registrarse</h2>
-
-    <form action ="register_data.php" method = "POST">
+<div id="editarUsuario">
+    <form action="actualizarUsuario.php?id=<?php echo $row['idUsuario']?>" method = "POST">
         <div class="username">
-            <input type="text" name ="nombre" required>
+            <input type="text" name ="nombre" value = "<?php echo $nombre?>" required>
             <label>Nombre</label>
         </div>
         <div class="username">
-            <input type="text" name ="lastname1" required>
+            <input type="text" name ="lastname1" value = "<?php echo $apellidoP?>" required>
             <label>Apellido paterno</label>
         </div>
         <div class="username">
-            <input type="text" name ="lastname2" required>
+            <input type="text" name ="lastname2" value = "<?php echo $apellidoM?>" required>
             <label>Apellido materno</label>
         </div>
         <div class="username">
-            <input type="text" name ="job" required>
+            <input type="text" name ="job" value = "<?php echo $profesion?>" required>
             <label>Profesión</label>
         </div>
         <div class="username">
-            <input type="text" name ="institution" required>
+            <input type="text" name ="institution" value = "<?php echo $institucion?>" required>
             <label>Institución</label>
         </div>
         <div class="username">
-            <input type="password" name = "password" required>
-            <label>Contraseña</label>
-        </div>
-        <div class="username">
-
             <?php
                 include "../../../modelo/consultas/consultaTipoUsuarios.php";
 
@@ -49,14 +48,8 @@
                 }
             ?>
         </div>
-        <div class="recordar">¿Olvidó su contraseña?</div>
-        <input type="submit" value="Entrar">
-        <div class="registrarse">
-            <a href ="login.php">Volver al inicio de sesión</a>
-        </div>
+        <input type="submit" class="btn btn-dark fs-4" value="Actualizar">
+
     </form>
 </div>
 
-<?php
-    include "../modulos/footer.php";
-?>

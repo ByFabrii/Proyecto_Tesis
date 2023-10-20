@@ -6,7 +6,7 @@
         <h2 class=" text-center">Selecciona una vista</h2>
         <button class="btn btn-primary fs-1" id="alternador" onclick="alternarContenido()">Mostrar tabla</button>    </div>
 
-    <div class="col date-container text-end">
+    <div class="col date-container text-end mt-2">
         <div id="fechaYDia" class="col"></div>
         <div id="nombreUsuario" class="my-3"><?php echo $nombre; ?></div>
         <div class="col">

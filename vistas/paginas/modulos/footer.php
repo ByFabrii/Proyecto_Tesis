@@ -6,6 +6,9 @@
 
         <!--Script para la fecha y hora automatica en la parte superior de la página-->
         <script src="../../js/fecha_hora.js"></script>
+        
+        
+        <script src="../../js/recargarPagina.js"></script>
 
         <!--Sección de funcionamiento para el mapa-->
         <script src="../../js/mapa.js"></script>

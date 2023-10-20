@@ -10,7 +10,7 @@
     $password = hash("sha512", $password);
 
 
-    $validacion = "SELECT u.nombre, u.contraseña, r.usuario as rol FROM usuarios u left join tipousuario r ON u.tipousuario_idTipousuario = r.idTipoUsuario WHERE nombre = '$nombre' and contraseña = '$password'";
+    $validacion = "SELECT u.nombre, u.contraseña, r.usuario as rol FROM usuarios u left join tipousuario r ON u.tipoUsuario_usuario = r.usuario WHERE nombre = '$nombre' and contraseña = '$password'";
     $resultado = $conexion->query($validacion);
     $row = $resultado -> fetch_assoc();
 

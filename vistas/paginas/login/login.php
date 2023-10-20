@@ -43,9 +43,13 @@
                     <label for="">Contraseña</label>
                 </div>
                 <div class="forget">
-                    <label for=""><input type="checkbox">Recordar <a href="#">Contraseña</a></label>
+                    <label for=""><a href="#">¿Olvidaste tu contraseña?</a></label>
                 </div>
                 <input type="submit" value="Entrar">
+                <div class="forget mt-4 d-flex justify-content-center">
+                    <label for=""><a class="text-primary" href="../../../index.php">VOLVER AL INICIO</a></label>
+                </div>
+                
             </form>
         </div>
     </div>

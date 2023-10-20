@@ -1,23 +1,23 @@
 <?php
     // Define un arreglo asociativo para las estaciones y sus configuraciones específicas
     $estaciones = [
-        'Estacion 1' => [
+        'Estación 1' => [
             'titulo' => 'Estación 1',
             'nombre' => $nombre_estacion,
         ],
-        'Estacion 2' => [
+        'Estación 2' => [
             'titulo' => 'Estacion 2',
             'nombre' => $nombre_estacion,
         ],
-        'Estacion 3' => [
+        'Estación 3' => [
             'titulo' => 'Estacion 3',
             'nombre' => $nombre_estacion,
         ],
-        'Estacion 4' => [
+        'Estación 4' => [
             'titulo' => 'Estacion 4',
             'nombre' => $nombre_estacion,
         ],
-        'Estacion 5' => [
+        'Estación 5' => [
             'titulo' => 'Estacion 5',
             'nombre' => $nombre_estacion,
         ],

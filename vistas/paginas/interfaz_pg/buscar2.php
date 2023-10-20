@@ -1,6 +1,5 @@
 <?php 
-    include_once "../modulos/conexion.php";
-    include_once "../../../app/helpers/helpers.php";
+    include "../../../modelo/conexion.php";
 
 ?>
 <?php
@@ -10,7 +9,8 @@ $nombre_estacion = $_GET['Nombre'];
 ?>
 
 <?php
-    include_once "../modulos/arregloEstaciones.php";
+    include "../modulos/arregloEstaciones.php";
+    include "../../../app/helpers/helpers.php";
 
     include "../../../modelo/consultas/consultaRegistroPorEstacion.php";
 ?>

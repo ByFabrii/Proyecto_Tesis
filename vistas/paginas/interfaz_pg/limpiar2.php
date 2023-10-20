@@ -1,5 +1,5 @@
 <?php 
-    include_once "../modulos/conexion.php";
+    include "../../../modelo/conexion.php";
 ?>
 
 <?php
