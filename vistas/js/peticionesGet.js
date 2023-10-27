@@ -23,7 +23,8 @@ function peticionGetPublico() {
 function peticionGet() {
     xmlhttp = new XMLHttpRequest();
 
-    var estaciones = document.getElementById('CBEstaciones').value;
+     var estaciones = document.getElementById('CBEstaciones').value;
+    
        // alert(estaciones);
     var url = "buscar2.php?Nombre=" + estaciones;
     xmlhttp.open('GET', url, true);

@@ -2,39 +2,6 @@
     include "../../../modelo/conexion.php";
 ?>
 
-<?php
-    if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'Actualizado'){
-?>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        Se actualizó exitosamente
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>!
-    </div>
-<?php
-}
-?>
-
-<?php
-    if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'Eliminado'){
-?>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        Se eliminó exitosamente
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>!
-    </div>
-<?php
-}
-?>
-
-<?php
-    if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'Agregado'){
-?>
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        Se agregó exitosamente
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>!
-    </div>
-<?php
-}
-?>
-
 <div class = "container" id="VerEstaciones">
     <?php
         include "../../../modelo/consultas/consultaEstaciones.php";
@@ -62,7 +29,7 @@
                         <td><?php echo $datos['Nombre']?></td>
                         <td><?php echo $datos['Longitud']?></td>
                         <td><?php echo $datos['Latitud']?></td>
-                        <td><a type="button" class ="btn btn-success fs-4 editar-estacion" href="../modulos/updateEstacion.php?id=<?php echo $datos['idEstaciones']?>">Modificar</a></td>
+                        <td><a type="button" class ="btn btn-primary fs-4 editar-estacion" href="../modulos/updateEstacion.php?id=<?php echo $datos['idEstaciones']?>">Modificar</a></td>
                         <td><a type="button" class ="btn btn-danger fs-4" href="../modulos/eliminarEstacion.php?id=<?php echo $datos['idEstaciones']?>">Eliminar</a></td>
                     </tr>
                 </tbody>

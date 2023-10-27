@@ -6,10 +6,10 @@ $(document).ready(function() {
         $('#VerusuariosModal').modal('show');
     } else if(urlParams.get('showModal') === '2') {
         // Abre el modal con los usuarios aquí
-        $('#EditarUsuarios').modal('show');
+        $('#editarUsuarioModal').modal('show');
     } else if(urlParams.get('showModal') === '3') {
         // Abre el modal con los usuarios aquí
         $('#VerEstacionesModal').modal('show');
     }
 });
-
+ 

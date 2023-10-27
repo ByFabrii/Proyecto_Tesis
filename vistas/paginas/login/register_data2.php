@@ -18,7 +18,7 @@
     $ejecutar = mysqli_query($conexion, $query_insert);
 
     if($ejecutar){
-        header('Location: ../interfaz_admin/admin.php?mensaje=Agregado&showModal=1');
+        header('Location: ../interfaz_admin/admin.php');
     }
 
 ?>

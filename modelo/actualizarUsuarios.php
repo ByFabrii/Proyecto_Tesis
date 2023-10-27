@@ -4,8 +4,10 @@
 
     //Verificamos la consulta
     if($conexion->query($query) === true){
-        header('Location: ../interfaz_admin/admin.php?mensaje=Actualizado');
-
+        echo '<script>';
+        echo 'alert("El usuario ' . $nombre . ' se actualizó exitosamente!");';
+        echo 'window.location = "../interfaz_admin/admin.php";'; // Redirige a la página de administrador
+        echo '</script>';
     }else{
         echo "Error en la consulta: " . $query . "<br>" . $conexion->error;
     }

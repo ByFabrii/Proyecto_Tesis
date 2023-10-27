@@ -1,41 +1,6 @@
 <?php
     include "../../../modelo/conexion.php";
-?>
 
-<?php
-    if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'Actualizado'){
-?>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        Se actualizó exitosamente
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>!
-    </div>
-<?php
-}
-?>
-
-<?php
-    if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'Eliminado'){
-?>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        Se eliminó exitosamente
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>!
-    </div>
-<?php
-}
-?>
-
-<?php
-    if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'Agregado'){
-?>
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        Se agregó exitosamente
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>!
-    </div>
-<?php
-}
-?>
-
-<?php
     include "../../../modelo/consultas/consultaUsuarios.php";
 ?>
 
@@ -65,9 +30,9 @@
                 <td><?php echo $datos['apellidoP']?></td>
                 <td><?php echo $datos['apellidoM']?></td>
                 <td><?php echo $datos['profesion']?></td>
-                <td><?php echo $datos['institucion']?></td>
+                <td><?php echo $datos['institucion']?></td> 
                 <td><?php echo $datos['tipoUsuario_usuario']?></td>
-                <td><a type="button" class ="btn btn-success fs-4 editar-usuario" href="../modulos/updateUsers.php?id=<?php echo $datos['idUsuario']?>">Modificar</a></td>
+                <td><a type="button" class ="btn btn-primary fs-4 editar-usuario" data-bs-toggle="modal" data-bs-target="#editarUsuarioModal">Modificar</a></td>
                 <td><a type="button" class ="btn btn-danger fs-4" href="../modulos/eliminarUsuario.php?id=<?php echo $datos['idUsuario']?>">Eliminar</a></td>
             </tr>
         </tbody>

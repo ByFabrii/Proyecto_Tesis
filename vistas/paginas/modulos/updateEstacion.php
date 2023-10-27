@@ -23,7 +23,7 @@
             <input type="text" name ="latitud" value = "<?php echo $latitud?>" required>
             <label>Latitud</label>
         </div>
-        <input type="submit" class="btn btn-dark fs-4" value="Actualizar">
+        <input type="submit" class="btn btn-primary fs-4" value="Actualizar">
 
     </form>
 </div>

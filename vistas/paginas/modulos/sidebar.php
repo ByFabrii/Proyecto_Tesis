@@ -17,7 +17,7 @@
         <ul class="nav nav-pills mt-3 fs-1 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
             <li class="nav-item">
                 <a href="#" class="nav-link align-middle px-0 text-white" id="homeLink">
-                    <i class="bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                    <i class="bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
                 </a>
                 
             </li>
