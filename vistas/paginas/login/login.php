@@ -42,10 +42,7 @@
                     <input type="password" name="password" required>
                     <label for="">Contraseña</label>
                 </div>
-                <div class="forget">
-                    <label for=""><a href="#">¿Olvidaste tu contraseña?</a></label>
-                </div>
-                <input type="submit" value="Entrar" class="btn btn-primary">
+                <input type="submit" value="Entrar" class="btn btn-primary fs-1">
                 <div class="forget mt-4 d-flex justify-content-center">
                     <label for=""><a class="text-primary" href="../../../index.php">VOLVER AL INICIO</a></label>
                 </div>

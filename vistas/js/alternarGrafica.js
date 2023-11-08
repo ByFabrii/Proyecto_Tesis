@@ -1,5 +1,6 @@
 var verUsuarios = document.getElementById('VerUsuarios');
 var verEstaciones = document.getElementById('VerEstaciones');
+var verRegistros = document.getElementById('VerRegistros');
 
 var verMapa = document.getElementById('mapa');
 
@@ -41,6 +42,7 @@ function alternarTablaUsuarios() {
         verUsuarios.style.display = 'block';
         verMapa.style.display = 'none';
         verEstaciones.style.display = 'none';
+        verRegistros.style.display = 'none';
     } else if (verUsuarios.style.display === 'block') {
         verUsuarios.style.display = 'none';
         verMapa.style.display = 'block';
@@ -53,10 +55,23 @@ function alternarTablaEstaciones() {
         verEstaciones.style.display = 'block';
         verMapa.style.display = 'none';
         verUsuarios.style.display = 'none';
+        verRegistros.style.display = 'none';
     } else if (verEstaciones.style.display === 'block') {
         verEstaciones.style.display = 'none';
         verMapa.style.display = 'block';
     }
 }
 
+function alternarTablaRegistros() {
+    // Interfaz Admin
+    if (verRegistros.style.display === 'none' || verRegistros.style.display === '') {
+        verRegistros.style.display = 'block';
+        verMapa.style.display = 'none';
+        verUsuarios.style.display = 'none';
+        verEstaciones.style.display = 'none';
+    } else if (verRegistros.style.display === 'block') {
+        verRegistros.style.display = 'none';
+        verMapa.style.display = 'block';
+    }
+}
 

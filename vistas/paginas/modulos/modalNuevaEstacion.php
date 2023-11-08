@@ -29,7 +29,7 @@
                         <input type="text" name ="latitud" required>
                         <label>Latitud</label>
                     </div>
-                    <input type="submit" value="Crear" class="btn btn-primary">
+                    <input type="submit" value="Crear" class="btn btn-primary fs-1">
                 </form>
             </div>
         </div>

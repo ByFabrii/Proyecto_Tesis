@@ -9,8 +9,9 @@
 
 ?>
 
-<div id="editarEstacion">
-    <form action="actualizarEstacion.php?id=<?php echo $row['idEstaciones']?>" method = "POST">
+<div id="editarEstacion" class="container text-center h-100 d-flex align-items-center justify-content-center">
+    <form action="actualizarEstacion.php?id=<?php echo $row['idEstaciones']?>" method = "POST" class ="border p-5">
+        <h2 class = "border mb-5 fs-1">MODIFICAR ESTACIÓN</h2>
         <div class="username">
             <input type="text" name ="nombre" value = "<?php echo $nombre?>" required>
             <label>Nombre</label>
@@ -24,6 +25,8 @@
             <label>Latitud</label>
         </div>
         <input type="submit" class="btn btn-primary fs-4" value="Actualizar">
+        <br>
+        <a type="button" class="btn btn-secondary fs-1 px-2 mt-3 rounded-pill" href="../interfaz_admin/admin.php">Regresar</a>
 
     </form>
 </div>

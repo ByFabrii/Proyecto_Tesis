@@ -9,6 +9,7 @@
                 include "../modulos/mapa2.php";
                 include "../modulos/tablaUsuarios.php";
                 include "../modulos/tablaEstaciones.php";
+                include "../modulos/tablaRegistros.php";
             ?>
         </div>
     </div>

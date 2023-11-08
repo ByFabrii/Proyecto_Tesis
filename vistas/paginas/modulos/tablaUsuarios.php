@@ -3,7 +3,9 @@
 
     include "../../../modelo/consultas/consultaUsuarios.php";
 ?>
+<div class="container" id="EditarUsuarios">
 
+</div>
 <div class ="container" id="VerUsuarios">
     <h2 class = "text-center pt-2">Usuarios:</h2>
     <table class="table table-hover border border-dark table-striped-columns">
@@ -32,8 +34,9 @@
                 <td><?php echo $datos['profesion']?></td>
                 <td><?php echo $datos['institucion']?></td> 
                 <td><?php echo $datos['tipoUsuario_usuario']?></td>
-                <td><a type="button" class ="btn btn-primary fs-4 editar-usuario" data-bs-toggle="modal" data-bs-target="#editarUsuarioModal">Modificar</a></td>
+                <td><a type="button" class ="btn btn-primary fs-4 editar-usuario" href="../modulos/updateUsers.php?id=<?php echo $datos['idUsuario']?>" >Modificar</a></td>
                 <td><a type="button" class ="btn btn-danger fs-4" href="../modulos/eliminarUsuario.php?id=<?php echo $datos['idUsuario']?>">Eliminar</a></td>
+                <td><a type="button" class ="btn btn-danger fs-4" href="../../fpdf/PruebaV.php" target="_blank">Eliminar</a></td>
             </tr>
         </tbody>
         <?php
@@ -41,4 +44,5 @@
         ?>
     </table>
 </div>
+
 

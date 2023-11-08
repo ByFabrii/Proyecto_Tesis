@@ -1,6 +1,6 @@
 <?php
     // Realiza la consulta SQL para obtener los datos históricos
-    $sql = "SELECT * FROM registro ORDER BY idRegistro DESC";
+    $sql = "SELECT * FROM registro ORDER BY idRegistro DESC LIMIT 15";
     $result = $conexion->query($sql);
 
     $data_wind_speed = array(); // Array para almacenar los datos
