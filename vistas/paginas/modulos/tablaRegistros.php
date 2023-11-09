@@ -68,7 +68,7 @@
                 <td><?php echo $datos['In_Dew']?></td>
                 <td><?php echo $datos['In_Heat']?></td>
                 <td><?php echo $datos['ET']?></td>
-                <td><a type="button" class="btn btn-danger fs-4" href="../modulos/eliminarUsuario.php?id=<?php echo $datos['idUsuario']?>">Eliminar</a></td>
+                <td><a type="button" class="btn btn-danger fs-4" href="../modulos/eliminarRegistro.php?id=<?php echo $datos['idRegistro']?>">Eliminar</a></td>
             </tr>
         </tbody>
         <?php
