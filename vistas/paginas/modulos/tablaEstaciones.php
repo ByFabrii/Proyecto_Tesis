@@ -8,6 +8,7 @@
     ?>
     <div>
         <div class="vista" id="divContenedorTabla">
+            <a type="button" class ="btn btn-success fs-3" href="../../fpdf/reporteEstaciones.php" target="_blank">Generar reporte de estaciones</a>
             <h2 class = "text-center pt-2">Estaciones:</h2>
             <table class="container-sm table table-hover border border-dark table-striped-columns">
                 <thead class="bg-warning text-white table-dark">

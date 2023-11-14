@@ -67,6 +67,34 @@
                     
                 </ul>
             </li>
+
+            <li>
+                <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                    <i class="bi-clipboard-check"></i> <span class="ms-1 d-none d-sm-inline">Generar reportes</span> </a>
+                <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
+                    <li>
+                        <a type ="button" class="nav-link px-3 fs-3 text-white" href="../../fpdf/reporteUsuarios.php" target="_blank">
+                            <span class="d-none d-sm-inline text-white">Reporte usuarios</span><i class="bi-person-check mx-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a type ="button" class="nav-link px-3 fs-3 text-white" href="../../fpdf/reporteEstaciones.php" target="_blank">
+                            <span class="d-none d-sm-inline text-white">Reporte estaciones</span><i class="bi-pc-horizontal mx-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a type ="button" class="nav-link px-3 fs-3 text-white" href="../../fpdf/reporteRegistrosPC.php" target="_blank">
+                            <span class="d-none d-sm-inline text-white">Reporte proteccion Civil</span><i class="bi-bricks mx-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a type ="button" class="nav-link px-3 fs-3 text-white" href="../../fpdf/reporteRegistrosAG.php" target="_blank">
+                            <span class="d-none d-sm-inline text-white">Reporte agricultores</span><i class="bi-tree-fill mx-2"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
         </ul>
         <hr>
         <div class="mt-auto">

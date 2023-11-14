@@ -8,6 +8,7 @@
 
 </div>
 <div class ="container" id="VerRegistros">
+    <a type="button" class ="btn btn-success fs-3" href="../../fpdf/reporteRegistrosPC.php" target="_blank">Generar reporte de registros</a>
     <h2 class = "text-center pt-2">Registros:</h2>
     <div class="table-responsive border border-dark mx-auto" style="max-height: 600px; max-width: 1100px">
     <table class="table table-hover table-striped-columns">
@@ -57,7 +58,6 @@
                 <td><?php echo $datos['Wind_Speed']?></td>
                 <td><?php echo $significado?></td>
                 <td><?php echo $datos['Wind_Chill']?></td>
-                <td><?php echo $datos['Heat_Index']?></td>
                 <td><?php echo $datos['Heat_Index']?></td>
                 <td><?php echo $datos['Bar']?></td>
                 <td><?php echo $datos['Rain_Rate']?></td>
