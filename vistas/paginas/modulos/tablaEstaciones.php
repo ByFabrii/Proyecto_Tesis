@@ -3,12 +3,13 @@
 ?>
 
 <div class = "container" id="VerEstaciones">
+	<a href="../modulos/CSV/exportEstaciones.php" class="btn btn-success pull-right fs-3"><span class="glyphicon glyphicon-export"></span> Exportar Tabla como CSV</a>
+
     <?php
         include "../../../modelo/consultas/consultaEstaciones.php";
     ?>
     <div>
         <div class="vista" id="divContenedorTabla">
-            <a type="button" class ="btn btn-success fs-3" href="../../fpdf/reporteEstaciones.php" target="_blank">Generar reporte de estaciones</a>
             <h2 class = "text-center pt-2">Estaciones:</h2>
             <table class="container-sm table table-hover border border-dark table-striped-columns">
                 <thead class="bg-warning text-white table-dark">
@@ -17,6 +18,8 @@
                         <td>Nombre</td>
                         <td>Longitud</td>
                         <td>Latitud</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </thead>
 

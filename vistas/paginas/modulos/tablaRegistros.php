@@ -8,9 +8,8 @@
 
 </div>
 <div class ="container" id="VerRegistros">
-    <a type="button" class ="btn btn-success fs-3" href="../../fpdf/reporteRegistrosPC.php" target="_blank">Generar reporte de registros</a>
     <h2 class = "text-center pt-2">Registros:</h2>
-    <div class="table-responsive border border-dark mx-auto" style="max-height: 600px; max-width: 1100px">
+    <div class="table-responsive border border-dark mx-auto" style="height: 550px;  max-width: 950px">
     <table class="table table-hover table-striped-columns">
         <thead class="bg-warning text-white table-dark">
             <tr>
@@ -36,7 +35,7 @@
                 <th>Punto de rocio interno</th>
                 <th>Índice de calor interno</th>
                 <th>Evotranspiración</th>
-                <th>Acciones</th>
+                <th></th>
             </tr>
         </thead>
 

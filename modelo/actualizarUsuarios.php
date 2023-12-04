@@ -1,6 +1,9 @@
 <?php
     //Consulta para actualizar
-    $query = "UPDATE usuarios SET nombre = '$nombre', apellidoP = '$apellidoP', apellidoM = '$apellidoM', profesion = '$profesion', institucion = '$institucion', tipoUsuario_usuario = '$tipoUsuario' WHERE idUsuario = $id";
+    $query = "UPDATE usuarios SET nombre = '$nombre',
+     apellidoP = '$apellidoP', apellidoM = '$apellidoM',
+      profesion = '$profesion', institucion = '$institucion',
+      tipoUsuario_usuario = '$tipoUsuario' WHERE idUsuario = $id";
 
     //Verificamos la consulta
     if($conexion->query($query) === true){

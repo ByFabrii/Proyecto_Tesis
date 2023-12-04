@@ -2,7 +2,7 @@ var verUsuarios = document.getElementById('VerUsuarios');
 var verEstaciones = document.getElementById('VerEstaciones');
 var verRegistros = document.getElementById('VerRegistros');
 
-var verMapa = document.getElementById('mapa');
+var mapa = document.getElementById('mapa');
 
 function alternarContenido() {
     var tablasDiv = document.getElementById('tablas');
@@ -10,16 +10,12 @@ function alternarContenido() {
 
     var textoBoton = document.getElementById('alternador');
 
-    var selEstacion = document.getElementById('seleccionEstacion');
-
     if (graficasDiv.style.display === 'none') {
         // Si las gráficas están ocultas, las mostramos y ocultamos las tablas
         graficasDiv.style.display = 'block';
         tablasDiv.style.display = 'none';
         
         textoBoton.textContent = 'Mostrar tabla';
-
-        selEstacion.style.display = 'none';
 
         mapa.style.display = 'none';
 
@@ -30,8 +26,6 @@ function alternarContenido() {
 
         textoBoton.textContent = 'Mostrar gráficas';
 
-        selEstacion.style.display = 'block';
-
         mapa.style.display = 'none';
     }
 }
@@ -40,12 +34,12 @@ function alternarTablaUsuarios() {
     // Tabla Usuarios
     if (verUsuarios.style.display === 'none' || verUsuarios.style.display === '') {
         verUsuarios.style.display = 'block';
-        verMapa.style.display = 'none';
+        mapa.style.display = 'none';
         verEstaciones.style.display = 'none';
         verRegistros.style.display = 'none';
     } else if (verUsuarios.style.display === 'block') {
         verUsuarios.style.display = 'none';
-        verMapa.style.display = 'block';
+        mapa.style.display = 'block';
     }
 }
 
@@ -53,12 +47,12 @@ function alternarTablaEstaciones() {
     // Interfaz Admin
     if (verEstaciones.style.display === 'none' || verEstaciones.style.display === '') {
         verEstaciones.style.display = 'block';
-        verMapa.style.display = 'none';
+        mapa.style.display = 'none';
         verUsuarios.style.display = 'none';
         verRegistros.style.display = 'none';
     } else if (verEstaciones.style.display === 'block') {
         verEstaciones.style.display = 'none';
-        verMapa.style.display = 'block';
+        mapa.style.display = 'block';
     }
 }
 
@@ -66,12 +60,12 @@ function alternarTablaRegistros() {
     // Interfaz Admin
     if (verRegistros.style.display === 'none' || verRegistros.style.display === '') {
         verRegistros.style.display = 'block';
-        verMapa.style.display = 'none';
+        mapa.style.display = 'none';
         verUsuarios.style.display = 'none';
         verEstaciones.style.display = 'none';
     } else if (verRegistros.style.display === 'block') {
         verRegistros.style.display = 'none';
-        verMapa.style.display = 'block';
+        mapa.style.display = 'block';
     }
 }
 

@@ -1,6 +1,3 @@
-<div class="col date-container text-end mt-3">
-    <div id="fechaYDia" class="col"></div>
-    <div class="col mt-5">
-        <a type="button" class="btn btn-secondary fs-3 text-white" href ="../login/login.php">Iniciar Sesión</a>
-    </div>            
+<div class="col date-container text-end">
+    <div id="fechaYDia" class="col text-dark fs-5 my-3 mx-5"></div>         
 </div>

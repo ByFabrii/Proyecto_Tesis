@@ -12,8 +12,8 @@
 
 ?>
 
-<div class="col-auto col-md-3 col-xl-2 px-sm-1 px-0 bg-dark">
-    <div class="d-flex flex-column align-items-center align-items-sm-start px-3" id ="contenidosidebar">
+<div class="col-auto col-sm-3 px-sm-1 px-0 bg-dark d-flex flex-column ">
+    <div class="d-flex flex-column flex-grow-1 align-items-center align-items-sm-start px-3" id ="contenidosidebar" style="left: 0;">
         <ul class="nav nav-pills mt-3 fs-1 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
             <li class="nav-item">
                 <a href="#" class="nav-link align-middle px-0 text-white" id="homeLink">
@@ -97,8 +97,8 @@
             </li>
         </ul>
         <hr>
-        <div class="mt-auto">
-            <div class="dropdown pb-5" id="menuUsuario">
+        <div class="">
+            <div class="dropdown mt-auto fixed-bottom pb-5" id="menuUsuario">
                 <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="d-none d-sm-inline m-3 fs-2"><?php echo $nombre;?></span>
                 </a>

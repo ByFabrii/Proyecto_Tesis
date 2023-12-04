@@ -8,7 +8,7 @@
 </div>
 
 <div class ="container" id="VerUsuarios">
-    <a type="button" class ="btn btn-success fs-3" href="../../fpdf/reporteUsuarios.php" target="_blank">Generar reporte de usuarios</a>
+	<a href="../modulos/CSV/exportUsuarios.php" class="btn btn-success pull-right fs-3"><span class="glyphicon glyphicon-export"></span> Exportar Tabla como CSV</a>
     <h2 class = "text-center pt-2">Usuarios:</h2>
     <table class="table table-hover border border-dark table-striped-columns">
         <thead class="bg-warning text-white table-dark">
@@ -20,6 +20,8 @@
                 <td>Profesión</td>
                 <td>Institución</td>
                 <td>Tipo de usuario</td>
+                <td></td>
+                <td></td>
                 </tr>
         </thead>
 

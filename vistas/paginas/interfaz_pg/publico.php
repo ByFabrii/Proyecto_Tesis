@@ -1,32 +1,19 @@
 <?php
-    include "../modulos/header.php";
     include "../../../modelo/conexion.php";
 ?>
-<!-- Sección de filtros en la cabecera -->
-<div class="container pb-2 px-5">
-    <div class="row justify-content-center">
-        <?php
-            include_once "../modulos/filtroPorEstacion.php";
-            include_once "../modulos/solicitarVariables.php";
-            include_once "../modulos/fechaAutomatica.php";
-        ?>
-    </div>
-</div>
 
 <!-- Sección de datos principales y mapa -->
-<div class="container-fluid mb-5">
-    <div class="row">
+<div class="container-fluid vh-100">
+    <div class="row vh-100">
         <?php
-            include_once "../modulos/mapa.php";
-            include_once "datosGenerales.php";
+            include "sidebar.php";
+            include "datosGenerales.php";
         ?>
     </div>
 </div>
 
 <!-- Sección de componentes de publico (buscar, limpiar filtros, etc) -->
 <?php
-
-
     //Incluir footer para funcionamiento de los botones.
     include_once "../modulos/footer.php";
 ?>
