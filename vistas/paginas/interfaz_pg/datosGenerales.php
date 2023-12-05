@@ -1,15 +1,23 @@
 <div class="container-fluid col">
+        
         <?php 
             include "../modulos/fechaAutomatica.php";
         ?>
     <div class="row">
         <div class="col-md-6">
-            <?php include "../modulos/mapa.php"; ?>
+            <?php 
+            include "../modulos/mapa.php"; 
+            include "../../../modelo/consultas/consultaUltimoRegistro.php";
+            ?>
+            
         </div>
         <div class="col-md-6">
             <div class="container-weather" id="divContenedor">
                 <div class="row">
-                    <h2 class="text-center text-dark">Datos generales:</h2>
+                    <?php
+                        // Muestra el nombre de la estación después del título
+                        echo '<h2 class="text-center text-dark">Datos generales de la estación: ' . $nombreEstacion . '</h2>';
+                    ?>
                     <div class="weather-side col ">
                         <?php
                             include "../../../app/helpers/helpers.php"; //Solo debería ser temporal en datosGenerales.php en lo que acomodo el modelo.

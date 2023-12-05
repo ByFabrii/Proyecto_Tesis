@@ -76,7 +76,7 @@ include '../../modelo/conexion.php';//llamamos a la conexion BD
 
 
 $pdf = new PDF();
-$pdf->AddPage("landscape, A5"); /* aqui entran dos para parametros (horientazion,tamaño)V->portrait H->landscape tamaño (A3.A4.A5.letter.legal) */
+$pdf->AddPage(""); /* aqui entran dos para parametros (horientazion,tamaño)V->portrait H->landscape tamaño (A3.A4.A5.letter.legal) */
 $pdf->AliasNbPages(); //muestra la pagina / y total de paginas
 
 $i = 0;

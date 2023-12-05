@@ -1,9 +1,9 @@
 <?php
 	//Datos para la conexión con MySQL
-    $servidor = "http://162.241.63.224";
-	$usuario = "fabrizzi_Fabrizzio";
-	$password = "pr0gr4m3rF@br11;";
-	$bd_nombre = "fabrizzi_bdestaciones";
+    $servidor = "localhost";
+	$usuario = "root";
+	$password = "";
+	$bd_nombre = "bdestaciones";
 
     //Conexión con la base de datos
     $conexion = new mysqli($servidor, $usuario, $password, $bd_nombre);

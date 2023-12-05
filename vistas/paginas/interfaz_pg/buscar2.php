@@ -16,7 +16,10 @@ $nombre_estacion = $_GET['Nombre'];
 ?>
 <div class="container-weather row col" id="divContenedor">
     <div class="row">
-        <h2 class="text-center text-dark">Datos generales:</h2>
+        <?php
+            // Muestra el nombre de la estación después del título
+            echo '<h2 class="text-center text-dark">Datos generales de la estación: ' .$estacion['nombre']. '</h2>';
+        ?>
         <div class="weather-side col ">
             <?php
                 include "../../../modelo/consultas/consultaRegistroPorEstacion.php";

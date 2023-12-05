@@ -18,5 +18,5 @@
 </div>
 <div class="d-flex justify-content-center">
     <input type="button" class="btn btn-primary fs-3 mx-4" id="BFiltrar" value="Filtrar" onclick="peticionGetPublico()">
-    <input type="button" class="btn btn-light border border-dark fs-3" id="BLimpiar" value="Limpiar Filtros" onclick="limpiarFiltrosPublico()">
+    <input type="button" class="btn btn-light border border-dark fs-3" id="BLimpiar" value="Limpiar" onclick="limpiarFiltrosPublico()">
 </div>
