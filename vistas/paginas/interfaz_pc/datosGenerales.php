@@ -1,4 +1,4 @@
-<div class="col-9 m-auto p-auto">
+<div class="col-9 p-auto">
     <?php 
         include "../modulos/fechaAutomatica.php";
     ?>
@@ -8,7 +8,10 @@
     ?>
 
     <!--Sección de la tabla de datos-->
+
     <div id="tablas">
+	    <a href="../modulos/CSV/exportPC.php" class="btn btn-success pull-right fs-3"><span class="glyphicon glyphicon-export"></span> Exportar Tabla como CSV</a>
+
         <div class="vista" id="divContenedorTabla">
             <table class="container-sm table table-hover border border-dark my-5 table-striped-columns">
                 <thead class="bg-warning text-white table-dark">

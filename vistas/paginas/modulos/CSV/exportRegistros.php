@@ -10,10 +10,10 @@
     fprintf($output, chr(0xEF).chr(0xBB).chr(0xBF)); // Establecer BOM para UTF-8
 
     // Agregar encabezados al archivo CSV
-    fputcsv($output, array('idUsuario', 'nombre', 'apellidoP', 'apellidoM', 'profesion', 'institucion'));
+    fputcsv($output, array('idRegistro', 'Nombre Estación', 'Fecha', 'Hora', 'Temp_Out', 'Hi_Temp', 'Low_Temp', 'Out_Hum', 'Dew_Pt', 'Wind_Speed', 'Wind_Dir', 'Wind_Chill', 'Heat_Index', 'Bar', 'Rain_Rate', 'Solar_Rad', 'Solar_Energy', 'In_Temp', 'In_Hum', 'In_Dew', 'In_Heat', 'ET'));
 
     // Obtener datos de la base de datos y escribir en el archivo CSV
-    $query = $conexion->query("SELECT idUsuario, nombre, apellidoP, apellidoM, profesion, institucion FROM `usuarios` ORDER BY `apellidoP` ASC");
+    $query = $conexion->query("SELECT idRegistro, estaciones_nombre, fecha, hora, Temp_Out, Hi_Temp, Low_Temp, Out_Hum, Dew_Pt, Wind_Speed, Wind_Dir, Wind_Chill, Heat_Index, Bar, Rain_Rate, Solar_Rad, Solar_Energy, In_Temp, In_Hum, In_Dew, In_Heat, ET FROM `registro` ORDER BY `fecha` DESC");
     while ($fetch = $query->fetch_assoc()) {
         // Convertir cada valor a UTF-8 antes de escribirlo en el archivo CSV
         $convertedRow = array_map(function($value) {

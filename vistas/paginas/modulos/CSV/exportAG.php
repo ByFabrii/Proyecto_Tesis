@@ -3,17 +3,17 @@
 
     // Establecer encabezados para el archivo CSV
     header('Content-Type: text/csv; charset=UTF-8');
-    header('Content-Disposition: attachment; filename=usuarios.csv');
+    header('Content-Disposition: attachment; filename=registrosAgricultores.csv');
 
     // Abrir el archivo de salida con la codificación UTF-8
     $output = fopen("php://output", "w");
     fprintf($output, chr(0xEF).chr(0xBB).chr(0xBF)); // Establecer BOM para UTF-8
 
     // Agregar encabezados al archivo CSV
-    fputcsv($output, array('idUsuario', 'nombre', 'apellidoP', 'apellidoM', 'profesion', 'institucion'));
+    fputcsv($output, array('idRegistro', 'Nombre Estación', 'Fecha', 'Hora', 'Temp_Out', 'Hi_Temp', 'Low_Temp', 'Solar_Rad', 'Rain_Rate', 'Wind_Speed', 'Wind_Dir', 'Out_Hum', 'ET'));
 
     // Obtener datos de la base de datos y escribir en el archivo CSV
-    $query = $conexion->query("SELECT idUsuario, nombre, apellidoP, apellidoM, profesion, institucion FROM `usuarios` ORDER BY `apellidoP` ASC");
+    $query = $conexion->query("SELECT idRegistro, estaciones_nombre, fecha, hora, Temp_Out, Hi_Temp, Low_Temp, Solar_Rad, Rain_Rate, Wind_Speed, Wind_Dir, Out_Hum, ET FROM `registro` ORDER BY `fecha` DESC");
     while ($fetch = $query->fetch_assoc()) {
         // Convertir cada valor a UTF-8 antes de escribirlo en el archivo CSV
         $convertedRow = array_map(function($value) {

@@ -8,6 +8,7 @@
 
 </div>
 <div class ="container" id="VerRegistros">
+	<a href="../modulos/CSV/exportRegistros.php" class="btn btn-success pull-right fs-3"><span class="glyphicon glyphicon-export"></span> Exportar Tabla como CSV</a>
     <h2 class = "text-center pt-2">Registros:</h2>
     <div class="table-responsive border border-dark mx-auto" style="height: 550px;  max-width: 950px">
     <table class="table table-hover table-striped-columns">
